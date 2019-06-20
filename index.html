@@ -129,15 +129,15 @@
 
         <div class="row section-header" data-aos="fade-up">
             <div class="col-full">
-                <h3 class="subhead">Who We Are</h3>
-                <h1 class="display-1">(IKI JUDULE)->iki tulisan tentang dirimu karo sekilas penjelasan aplikasimu iki</h1>
+                <h1 class="display-1">Sekilas Tentang Aplikasi Hilal Detection</h1>
             </div>
         </div> <!-- end section-header -->
 
         <div class="row" data-aos="fade-up">
             <div class="col-full">
-                <p class="lead">
-                Nah ng kene iki isine, engko tolong sg ngene-ngene iki tulisen/ketiken ng word trus engko kirimen ng aku, OJO akeh-akeh titik ae sak paragrap ae cukup.. (SEMENTARA JEK TAK KEI TULISAN ACAK) Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque sed soluta labore consectetur rem, odit magni quod, nobis excepturi placeat voluptas dicta! Ab sint corrupti laudantium earum quae impedit quibusdam. 
+                <p class="lead" style="text-align: justify">
+                    Penentuan awal bulan qomariyah masih hangat diperbincangkan di kalangan masyarakat. Banyak ibadah dalam islam yang pelaksanaannya saling terkait dengan penentuan awan bulan qomariyah, diantaranya : Puasa Romadhon, hari raya idul fitri, dan ibadah haji. Penentuan awal bulan qomariyah dilakukan dengan 2 cara yakni hisab dan rukyat. Sebelum diadakannya rukyat perlu diketahui terlebih dulu kriteria dan spesifikasi hilal yang akan di rukyat terlebih dahulu menggunakan ilmu hisab. ilmu hisab sudah dikenal sejak masa sahabat dan mengalami banyak perkembangan dari masa ke masa. perkembangan tersebut menghasilkan penyempurnaan dari hisab urfi ke hisab taqribi dan dilakukan terus menerus yang sampai saat ini dikenal dengan hisab kontemporer. Ditengah berkembangnya ilmu hisab banyak astronom muslim yang ikut berperan, salah satunya KH. Noor Ahmad SS (Mbah Noor) dari jepara. Salah satu karya beliau yang sampai saat ini digunakan acuan dalam menentukan awal bulan qomariyah kitab Nurul Anwar. Kitab tersebut tegolong hisab hakiki takhkiki karena sudah menggunakan acuan perhitungan posisi benda langit yang didasarkan dengan gerak sebenarnya dan trigonometri bola. Hisab hakiki takhkiki hasilnya cukup akurat.
+                    <br>Oleh karena itu aplikasi ini dibuat agar supaya mempermudah kalangan umum dalam penentuan awal bulan qomariyah, perhitungan aplikasi ini juga mengacu pada kitab Nurul Anwar untuk mendapatkan hasil yang lebih akurat.
                 </p>
             </div>
         </div> <!-- end about-desc -->
@@ -262,28 +262,28 @@
 
         <div class="row" data-aos="fade-up">
             <div class="col-lg-9">
-                <label class="" for="lintangTempat">Lintang Tempat</label>
+                <label class="" for="lintangDerajat">Lintang Tempat</label>
                 <div class="row">
                     <div class="col-2">
-                        <input class="form-control" type="number" id="lintangTempat">
+                        <input class="form-control" type="number" id="lintangDerajat">
                     </div>
                     <div class="col-1 pl-0">
                         <p class="lead">&deg;</p>
                     </div>
                     <div class="col-2">
-                        <input class="form-control" type="number" id="lintangTempat">
+                        <input class="form-control" type="number" id="lintangMenit">
                     </div>
                     <div class="col-1 pl-0">
                         <p class="lead">'</p>
                     </div>
                     <div class="col-2">
-                        <input class="form-control" type="number" id="lintangTempat">
+                        <input class="form-control" type="number" id="lintangDetik">
                     </div>
                     <div class="col-1 pl-0">
                         <p class="lead">"</p>
                     </div>
                     <div class="col-3">
-                        <select class="full-width" id="sampleRecipientInput">
+                        <select class="full-width" id="lintangJenis">
                             <option value="-1">LS</option>
                             <option value="1">LU</option>
                         </select>
@@ -292,28 +292,28 @@
             </div>
             <!-- <div class="col-2"></div> -->
             <div class="col-lg-9">
-                <label class="" for="bujurTempat">Bujur Tempat</label>
+                <label class="" for="bujurDerajat">Bujur Tempat</label>
                 <div class="row">
                     <div class="col-2">
-                        <input class="form-control" type="number" id="bujurTempat">
+                        <input class="form-control" type="number" id="bujurDerajat">
                     </div>
                     <div class="col-1">
                         <p class="lead">&deg;</p>
                     </div>
                     <div class="col-2 form-inline">
-                        <input class="form-control" type="number" id="lintangTempat">
+                        <input class="form-control" type="number" id="bujurMenit">
                     </div>
                     <div class="col-1">
                         <p class="lead">'</p>
                     </div>
                     <div class="col-2">
-                        <input class="form-control" type="number" id="lintangTempat">
+                        <input class="form-control" type="number" id="bujurDetik">
                     </div>
                     <div class="col-1">
                         <p class="lead">"</p>
                     </div>
                     <div class="col-3">
-                        <select class="full-width" id="sampleRecipientInput">
+                        <select class="full-width" id="bujurJenis">
                             <option value="1">BT</option>
                             <option value="-1">BB</option>
                         </select>
@@ -349,12 +349,12 @@
                 <label class="" for="tahun">Tahun</label>
                 <input class="form-control" type="number" id="tahun">
             </div>
-            <hr>
             <div class="col-full">
+                <hr>
                 <button type="button" class="btn btn--primary" id="hitung">Hitung</button>
                 <button type="button" class="btn" id="reset">Reset</button>
             </div>
-            <div class="col-full" id="hasil"></div>
+            <div class="col-full mt-5" id="hasil"></div>
         </div>
 
         <!-- <div class="testimonials-wrap" data-aos="fade-up">
@@ -415,7 +415,7 @@
         <div class="row section-header" data-aos="fade-up">
             <div class="col-full">
                 <h3 class="subhead subhead--light">Contact Us</h3>
-                <h1 class="display-1 display-1--light">(IKI JUDULE)->iki bagian contact, mbuh arep mok isi opo POKOK TUGASMU PANCET IKI SISAN</h1>
+                <h1 class="display-1 display-1--light">Kami sadar aplikasi ini masih jauh dari sempurna, oleh karena itu kritik dan saran anda akan sangat membantu supaya menjadi lebih baik lagi.</h1>
             </div>
         </div> <!-- end section-header -->
 
@@ -423,8 +423,7 @@
 
             <div class="col-full contact-main" data-aos="fade-up">
                 <p>
-                <a href="mailto:#0" class="contact-email">emailmu@mail.com</a>
-                <span class="contact-number">(nomer telfonmu bekne gelem mok publikasino, bekne enek sg kate ngubungi)+1 (917) 123 456  /  +1 (917) 333 987</span>
+                    <a href="mailto:#0" class="contact-email">alfia_rista@yahoo.com</a>
                 </p>
             </div> <!-- end contact-main -->
 
@@ -436,9 +435,9 @@
                 <h3 class="subhead subhead--light">Where To Find Us</h3>
 
                 <p class="contact-address">
-                    alamatmu<br>
-                    Provinsi Daerah, CA<br>
-                    94043 US
+                    Gempol, Pasuruan<br>
+                    Jawa Timur, Indonesia<br>
+                    67155
                 </p>
             </div> <!-- end contact-secondary -->
 
